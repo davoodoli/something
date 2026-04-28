@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Therapy OS</title>
+
+<link rel="stylesheet" href="style.css">
+
+<!-- فونت فارسی -->
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="container">
+
+  <img src="images/therapist.jpg" class="avatar">
+
+  <h1>داشبورد ذهن</h1>
+  <p class="subtitle">سیستم در حال اجرا با کمک شما 🙂</p>
+
+  <div class="cards">
+    <div class="card" onclick="openModule('patience')">⏳ تست صبر</div>
+    <div class="card" onclick="openModule('fear')">🎢 ماژول شهربازی</div>
+    <div class="card" onclick="openModule('logs')">💬 لاگ جلسات</div>
+    <div class="card locked" onclick="openFinal()">🎉 ؟؟؟</div>
+  </div>
+
+</div>
+
+<div id="modal">
+  <div id="modal-content"></div>
+</div>
+
+<audio id="clickSound" src="sounds/click.mp3"></audio>
+<audio id="successSound" src="sounds/success.mp3"></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
