@@ -110,3 +110,9 @@ function openFinal(){
     origin: { y: 0.6 }
   });
 }
+
+
+document.getElementById("modal").onclick = function(){
+  this.style.display = "none";
+  this.classList.remove("show");
+};
