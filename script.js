@@ -78,7 +78,7 @@ function openModule(type){
 }
 
 function openFinal(){
-  const allDone = visited.patience && visited.fear && visited.logs;
+  const allDone = visited.patience && visited.logs;
 
   const modal = document.getElementById("modal");
   const content = document.getElementById("modal-content");
