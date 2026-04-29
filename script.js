@@ -1,6 +1,6 @@
 let visited = {
   patience: false,
-  fear: false,
+  fear: true,
   logs: false
 };
 
